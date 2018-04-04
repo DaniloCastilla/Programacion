@@ -1,0 +1,36 @@
+package DomoArray;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class DomoArray {
+	
+	public static void main(String[] args) {
+		
+		char volales[] = {'u','a','o','i','e'};
+		int numeros[] = {1,5,8,9,8,7,4,5,8,2,1,4,5,8};
+		
+		Arrays.sort(volales);
+		System.out.println(Arrays.toString(volales));
+		Arrays.sort(numeros);
+		System.out.println(Arrays.toString(numeros));
+		
+		int index;
+		
+		
+		for(char e1 : volales) {
+			index = Arrays.binarySearch(volales, e1);
+			System.out.printf("%c .. %d%n" , e1, index);
+		}
+		
+		index = Arrays.binarySearch(volales, 'p');
+		System.out.printf("%c .. %d%n" , 'p', index);
+		
+		char[]vocales2=Arrays.copyOf(volales, 5);
+		System.out.printf("%nVocales2: %s%n", Arrays.toString(vocales2));
+		
+		Arrays.fill(vocales2, 'a');
+		System.out.printf("%nVocales2: %s%n", Arrays.toString(vocales2));
+		
+	}
+
+}
