@@ -1,0 +1,19 @@
+package DomoArray;
+
+public class Calculadora {
+
+	public int sum (int N1, int N2) {
+		System.out.println("Metodo Numero 1");
+		return N1 + N2;
+	}
+	
+	public double sum (double N1, double N2) {
+		return N1 + N2;
+	}
+	
+	public int sum (float N1, float N2) {
+		return (int) (N1 + N2);
+	}
+	
+}
+         
